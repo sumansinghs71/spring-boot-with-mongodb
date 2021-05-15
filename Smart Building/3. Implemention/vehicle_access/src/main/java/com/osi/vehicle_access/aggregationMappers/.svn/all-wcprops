@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/osi-repos/OSIIndia_IIoT_Manufacturing_POCs/!svn/ver/30/Smart%20Building/3.%20Implemention/vehicle_access/src/main/java/com/osi/vehicle_access/aggregationMappers
+END
+AvgParkingDuration.java
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/osi-repos/OSIIndia_IIoT_Manufacturing_POCs/!svn/ver/30/Smart%20Building/3.%20Implemention/vehicle_access/src/main/java/com/osi/vehicle_access/aggregationMappers/AvgParkingDuration.java
+END
+ParkingDuration.java
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/osi-repos/OSIIndia_IIoT_Manufacturing_POCs/!svn/ver/33/Smart%20Building/3.%20Implemention/vehicle_access/src/main/java/com/osi/vehicle_access/aggregationMappers/ParkingDuration.java
+END
+BuildingOccupancy.java
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/osi-repos/OSIIndia_IIoT_Manufacturing_POCs/!svn/ver/30/Smart%20Building/3.%20Implemention/vehicle_access/src/main/java/com/osi/vehicle_access/aggregationMappers/BuildingOccupancy.java
+END
+ParkedVehiclesByHour.java
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/osi-repos/OSIIndia_IIoT_Manufacturing_POCs/!svn/ver/30/Smart%20Building/3.%20Implemention/vehicle_access/src/main/java/com/osi/vehicle_access/aggregationMappers/ParkedVehiclesByHour.java
+END
+VehiclesByDuration.java
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/osi-repos/OSIIndia_IIoT_Manufacturing_POCs/!svn/ver/30/Smart%20Building/3.%20Implemention/vehicle_access/src/main/java/com/osi/vehicle_access/aggregationMappers/VehiclesByDuration.java
+END
+RibbonData.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/osi-repos/OSIIndia_IIoT_Manufacturing_POCs/!svn/ver/30/Smart%20Building/3.%20Implemention/vehicle_access/src/main/java/com/osi/vehicle_access/aggregationMappers/RibbonData.java
+END
+VehicleLogMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/osi-repos/OSIIndia_IIoT_Manufacturing_POCs/!svn/ver/33/Smart%20Building/3.%20Implemention/vehicle_access/src/main/java/com/osi/vehicle_access/aggregationMappers/VehicleLogMapper.java
+END
+PeriodicalParking.java
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/osi-repos/OSIIndia_IIoT_Manufacturing_POCs/!svn/ver/30/Smart%20Building/3.%20Implemention/vehicle_access/src/main/java/com/osi/vehicle_access/aggregationMappers/PeriodicalParking.java
+END
+LastSevenDayMetrics.java
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/osi-repos/OSIIndia_IIoT_Manufacturing_POCs/!svn/ver/30/Smart%20Building/3.%20Implemention/vehicle_access/src/main/java/com/osi/vehicle_access/aggregationMappers/LastSevenDayMetrics.java
+END
+ParkingSummary.java
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/osi-repos/OSIIndia_IIoT_Manufacturing_POCs/!svn/ver/30/Smart%20Building/3.%20Implemention/vehicle_access/src/main/java/com/osi/vehicle_access/aggregationMappers/ParkingSummary.java
+END
+PersonMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/osi-repos/OSIIndia_IIoT_Manufacturing_POCs/!svn/ver/33/Smart%20Building/3.%20Implemention/vehicle_access/src/main/java/com/osi/vehicle_access/aggregationMappers/PersonMapper.java
+END
+AvgParkingDurationResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/osi-repos/OSIIndia_IIoT_Manufacturing_POCs/!svn/ver/30/Smart%20Building/3.%20Implemention/vehicle_access/src/main/java/com/osi/vehicle_access/aggregationMappers/AvgParkingDurationResponse.java
+END

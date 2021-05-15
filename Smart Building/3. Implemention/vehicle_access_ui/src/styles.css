@@ -1,0 +1,127 @@
+/* You can add global styles to this file, and also import other style files */
+
+.custom-indicator {
+    /* box-shadow: 3px 0px 18px #888888; */
+    -webkit-box-shadow: 2px 0px 5px 1px rgba(163, 163, 163, 1);
+    -moz-box-shadow: 2px 0px 5px 1px rgba(163, 163, 163, 1);
+    box-shadow: 2px 0px 5px 1px rgba(163, 163, 163, 1);
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 0%;
+}
+
+.material-icons.md-18 {
+    font-size: 18px;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+.material-icons.md-60 {
+    font-size: 60px;
+}
+
+.material-icons.md-72 {
+    font-size: 50px;
+}
+
+.material-icons.md-dark {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+.material-icons.md-light {
+    color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-light.md-inactive {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.bg-lightgray {
+    background-color: #f5f5f5;
+}
+
+.bg-blue {
+    background-color: #428bca
+}
+
+.bg-green {
+    background-color: #5cb85c;
+}
+
+.bg-red {
+    background-color: #d9534f;
+}
+.bg-blued {
+    background-color: #4bc0c0;
+}
+
+.bg-orange {
+    background-color: #ff9f40;
+}
+
+.bg-yellow {
+    background-color: #ffcd56;
+}
+
+.text-yellow {
+    color: #ffcd56;
+}
+.text-blue {
+    color: #428bca;
+}
+.text-blued {
+    color: #4bc0c0;
+}
+.text-green {
+    color: #5cb85c;
+}
+
+.text-red {
+    color: #d9534f;
+}
+
+.text-orange {
+    color: #ff9f40;
+}
+
+.border-blue {
+    border-color: #428bca !important;
+}
+
+.border-blued {
+    border-color: #4bc0c0 !important;
+}
+.border-yellow {
+    border-color: #ffcd56 !important;
+}
+.border-green {
+    border-color: #5cb85c !important;
+}
+
+.border-red {
+    border-color: #d9534f !important;
+}
+
+.border-orange {
+    border-color: #ff9f40 !important;
+}
+
+.text-link {
+    cursor: pointer;
+    color: #428bca;
+    text-decoration: underline;
+}

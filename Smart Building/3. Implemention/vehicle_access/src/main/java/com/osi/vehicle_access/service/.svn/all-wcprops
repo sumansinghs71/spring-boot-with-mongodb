@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/osi-repos/OSIIndia_IIoT_Manufacturing_POCs/!svn/ver/31/Smart%20Building/3.%20Implemention/vehicle_access/src/main/java/com/osi/vehicle_access/service
+END
+IPlateService.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/osi-repos/OSIIndia_IIoT_Manufacturing_POCs/!svn/ver/30/Smart%20Building/3.%20Implemention/vehicle_access/src/main/java/com/osi/vehicle_access/service/IPlateService.java
+END
+IPersonService.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/osi-repos/OSIIndia_IIoT_Manufacturing_POCs/!svn/ver/30/Smart%20Building/3.%20Implemention/vehicle_access/src/main/java/com/osi/vehicle_access/service/IPersonService.java
+END
+IAnalyticsService.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/osi-repos/OSIIndia_IIoT_Manufacturing_POCs/!svn/ver/37/Smart%20Building/3.%20Implemention/vehicle_access/src/main/java/com/osi/vehicle_access/service/IAnalyticsService.java
+END
+IDashboardService.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/osi-repos/OSIIndia_IIoT_Manufacturing_POCs/!svn/ver/35/Smart%20Building/3.%20Implemention/vehicle_access/src/main/java/com/osi/vehicle_access/service/IDashboardService.java
+END

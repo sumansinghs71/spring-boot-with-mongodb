@@ -1,0 +1,13 @@
+.height-fix {
+    height: 300px;
+}
+
+.set-overflow {
+    overflow: hidden
+}
+
+@media (min-width: 992px) {
+    .modal-lg {
+        max-width: 1000px !important;
+    }
+}

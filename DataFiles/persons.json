@@ -1,0 +1,82 @@
+/* 1 */
+[{
+    "_id" : "NS1075",
+    "name" : "Suresh Beetukuri",
+    "designation" : "Delivery Manager",
+    "supervisor_id" : "NS0034",
+    "supervisor_name" : "Subhakar Burri",
+    "email" : "sbeetukuri@osius.com",
+    "mobile" : "+91 9849345859",
+    "vehicle_numbers" : [ 
+        {
+            "number" : "AP13L7277",
+            "type" : "CAR"
+        }, 
+        {
+            "number" : "AP29D5136",
+            "type" : "BIKE"
+        }
+    ],
+    "photo" : "",
+    "type" : "EMPLOYEE",
+    "address" : "HYDERABAD",
+    "valid_from" : ISODate("2015-08-19T00:00:00.000Z"),
+    "valid_to" : ISODate("2100-12-31T00:00:00.000Z"),
+    "remarks" : ""
+},
+
+/* 2 */
+{
+    "_id" : "NS1247",
+    "name" : "Pronoy Bose",
+    "designation" : "Associate Software Engineer",
+    "supervisor_id" : "NS0034",
+    "supervisor_name" : "Subhakar Burri",
+    "email" : "sbeetukuri@osius.com",
+    "mobile" : "+91 9431926250",
+    "photo" : "",
+    "type" : "EMPLOYEE",
+    "address" : "HYDERABAD",
+    "valid_from" : ISODate("2016-07-11T00:00:00.000Z"),
+    "valid_to" : ISODate("2100-12-31T00:00:00.000Z"),
+    "remarks" : "",
+    "vehicle_numbers" : [ 
+        {
+            "number" : "TS09EM4567",
+            "type" : "CAR"
+        }, 
+        {
+            "number" : "JH22P4321",
+            "type" : "BIKE"
+        }
+    ],
+    "_class" : "com.osi.vehicle_access.model.Person"
+},
+
+/* 3 */
+{
+    "_id" : "NS1265",
+    "name" : "Suman Thakur",
+    "designation" : "Associate Software Engineer",
+    "supervisor_id" : "NS0034",
+    "supervisor_name" : "Subhakar Burri",
+    "email" : "sbeetukuri@osius.com",
+    "mobile" : "+91 9431926250",
+    "photo" : "",
+    "type" : "VISITOR",
+    "address" : "HYDERABAD",
+    "valid_from" : ISODate("2016-07-11T00:00:00.000Z"),
+    "valid_to" : ISODate("2100-12-31T00:00:00.000Z"),
+    "remarks" : "",
+    "vehicle_numbers" : [ 
+        {
+            "number" : "TS04EJ0353",
+            "type" : "CAR"
+        }, 
+        {
+            "number" : "TS04EJ0354",
+            "type" : "BIKE"
+        }
+    ],
+    "_class" : "com.osi.vehicle_access.model.Person"
+}]

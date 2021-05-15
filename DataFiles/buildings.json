@@ -1,0 +1,40 @@
+/* 1 */
+[{
+    "_id" : "1",
+    "name" : "OSI Consulting Pvt Ltd",
+    "address" : "Madhapur",
+    "block_name" : " ",
+    "parking_level" : "G",
+    "total_car_slots" : 10,
+    "remaining_car_slots" : 0,
+    "total_bike_slots" : 5,
+    "remaining_bike_slots" : 0,
+    "_class" : "com.osi.vehicle_access.model.Building"
+},
+
+/* 2 */
+{
+    "_id" : "2",
+    "name" : "OSI Consulting Pvt Ltd",
+    "address" : "Madhapur",
+    "block_name" : "",
+    "parking_level" : "B1",
+    "total_car_slots" : 50,
+    "remaining_car_slots" : 37,
+    "total_bike_slots" : 70,
+    "remaining_bike_slots" : 17,
+    "_class" : "com.osi.vehicle_access.model.Building"
+},
+
+/* 3 */
+{
+    "_id" : "3",
+    "name" : "OSI Consulting Pvt Ltd",
+    "address" : "Madhapur",
+    "block_name" : "",
+    "parking_level" : "B2",
+    "total_car_slots" : 30.0,
+    "remaining_car_slots" : 20.0,
+    "total_bike_slots" : 50.0,
+    "remaining_bike_slots" : 40.0
+}]

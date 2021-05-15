@@ -1,0 +1,115 @@
+.set-overflow{
+    overflow: scroll
+}
+
+.height-fix{
+    height:500px;
+}
+
+.material-icons.md-30 {
+    font-size: 30px;
+}
+
+/* / Animations to fade the snackbar in and out  */
+
+@-webkit-keyframes fadein {
+    from {
+        right: 0;
+        opacity: 0;
+    }
+    to {
+        right: 3%;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        right: 0;
+        opacity: 0;
+    }
+    to {
+        right: 3%;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        right: 3%;
+        opacity: 1;
+    }
+    to {
+        right: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        top: 3%;
+        opacity: 1;
+    }
+    to {
+        top: 0;
+        opacity: 0;
+    }
+}
+
+.snackbar {
+    visibility: hidden;
+    min-width: 400px;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 10;
+    right: 3%;
+    top: 60px;
+    font-size: 17px;
+    background-color: #4CAF50;
+    -webkit-box-shadow: -4px 4px 5px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -4px 4px 5px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: -4px 4px 5px -2px rgba(0, 0, 0, 0.75);
+}
+
+.snackbar.show {
+    visibility: visible !important;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+.snackbar.danger {
+    background-color: #d9534f;
+}
+/* 
+.snackbar {
+    visibility: hidden;
+    min-width: 400px;
+    margin-right: -125px;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 10;
+    right: 11%;
+    top: 10%;
+    font-size: 17px;
+    background-color: #4CAF50;
+  }
+  
+  .snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 2.5s 2s;
+    animation: fadein 0.5s, fadeout 2.5s 2s;
+  }
+  
+  .snackbar.danger{
+    background-color: #d9534f;
+  } */
+
+  .form-field-border{
+    border-left-color: red !important;
+}

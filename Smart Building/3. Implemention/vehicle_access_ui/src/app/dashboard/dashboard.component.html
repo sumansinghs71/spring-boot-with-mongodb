@@ -1,0 +1,130 @@
+<div class="container-fluid">
+  <app-ribbon></app-ribbon>
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <div class="card custom-indicator ml-3">
+        <div class="card-header p-2">
+          <h5 class="ml-2">Vehicles Counters</h5>
+        </div>
+        <div class="card-body p-2 height-fix set-overflow">
+          <div class="container-fluid">
+            <div [chart]="barchart" style="height: 300px"></div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="row">
+            <div class="col-sm-8">
+              <!-- <pagination-controls (pageChange)="p = $event" previousLabel="" nextLabel="" maxSize="5" autoHide="true"></pagination-controls> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card custom-indicator ml-0 mr-3">
+        <div class="card-header p-2">
+          <h5 class="ml-2">Parking Duration</h5>
+        </div>
+        <div class="card-body p-2 height-fix set-overflow">
+          <div class="container-fluid">
+            <div [chart]="stackchart" style="height: 300px"></div>
+          </div>
+        </div>
+        <div class="card-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <div class="card custom-indicator ml-3">
+        <div class="card-header p-2">
+          <h5 class="ml-2">Parking Occupancy Percentage</h5>
+        </div>
+        <div class="card-body p-2 height-fix set-overflow">
+          <div class="container-fluid">
+            <div [chart]="columnChart" style="height: 300px"></div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="row">
+            <div class="col-sm-8">
+              <!-- <pagination-controls (pageChange)="p = $event" previousLabel="" nextLabel="" maxSize="5" autoHide="true"></pagination-controls> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card custom-indicator ml-0 mr-3">
+        <div class="card-header p-2">
+          <h5 class="ml-2">Parking Summary</h5>
+        </div>
+        <div class="card-body p-2 height-fix set-overflow">
+          <div class="container-fluid">
+            <div [chart]="pieChart" style="height: 300px"></div>
+          </div>
+        </div>
+        <div class="card-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- The Modal -->
+<div class="modal fade" id="vehicleModal" data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Person Details</h4>
+        <button type="button" class="close" data-dismiss="modal" (click)="dashboardModalClose()">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="container-fluid">
+          <table class="table table-sm table-bordered table-striped table-responsive">
+            <thead class="thead-light">
+              <tr>
+                <th>Person ID</th>
+                <th>Vehicle Number</th>
+                <th>Vehicle Type</th>
+                <th>In Time</th>
+                <th *ngIf="stackChartClickCategory == '>8'">Duration</th>
+                <th>Name</th>
+                <th>Supervisor Name</th>
+                <th>Mobile Number</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let vehicleDetail of vehicleDurationDetails|paginate: { itemsPerPage: 5, currentPage: p }">
+                <td>{{vehicleDetail.person_id}}</td>
+                <td>{{vehicleDetail.vehicle_number}}</td>
+                <td>{{vehicleDetail.vehicle_type}}</td>
+                <td style="white-space:nowrap;">{{vehicleDetail.in_time|date:'medium'}}</td>
+                <td *ngIf="stackChartClickCategory == '>8'">
+                    <span class="badge badge-danger">{{vehicleDetail.duration}} Hrs</span>
+                </td>
+                <td style="white-space:nowrap;">{{vehicleDetail.personDetails[0].name}}</td>
+                <td style="white-space:nowrap;">{{vehicleDetail.personDetails[0].supervisor_name}}</td>
+                <td style="white-space:nowrap;">{{vehicleDetail.personDetails[0].mobile}}</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <span class="mr-auto">
+            <pagination-controls (pageChange)="p = $event" previousLabel="" nextLabel="" maxSize="5" autoHide="true"></pagination-controls>
+        </span>
+        <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="dashboardModalClose()">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/osi-repos/OSIIndia_IIoT_Manufacturing_POCs/!svn/ver/37/Smart%20Building/3.%20Implemention/vehicle_access/src/main/java/com/osi/vehicle_access/service/Impl
+END
+PlateServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/osi-repos/OSIIndia_IIoT_Manufacturing_POCs/!svn/ver/31/Smart%20Building/3.%20Implemention/vehicle_access/src/main/java/com/osi/vehicle_access/service/Impl/PlateServiceImpl.java
+END
+PersonServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/osi-repos/OSIIndia_IIoT_Manufacturing_POCs/!svn/ver/30/Smart%20Building/3.%20Implemention/vehicle_access/src/main/java/com/osi/vehicle_access/service/Impl/PersonServiceImpl.java
+END
+AnalyticsServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/osi-repos/OSIIndia_IIoT_Manufacturing_POCs/!svn/ver/37/Smart%20Building/3.%20Implemention/vehicle_access/src/main/java/com/osi/vehicle_access/service/Impl/AnalyticsServiceImpl.java
+END
+DashboardServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/osi-repos/OSIIndia_IIoT_Manufacturing_POCs/!svn/ver/40/Smart%20Building/3.%20Implemention/vehicle_access/src/main/java/com/osi/vehicle_access/service/Impl/DashboardServiceImpl.java
+END

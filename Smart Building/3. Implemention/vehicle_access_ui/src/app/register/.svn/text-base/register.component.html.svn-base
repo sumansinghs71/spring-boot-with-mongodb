@@ -1,0 +1,236 @@
+<div class="container-fluid">
+  <div class="row mt-3">
+    <div class="snackbar" #AlertSuccess>{{flash.message}}</div>
+    <div class="snackbar danger" #AlertError>{{errorMessage}}</div>
+    <div class="col-md-6">
+      <div class="card custom-indicator">
+        <form #submitVehicle="ngForm" (ngSubmit)="submitVehicleNumber(submitVehicle)">
+          <div class="card-header p-2">
+            <h5 class="ml-2">Manual Check</h5>
+          </div>
+          <div class="card-body p-2 height-fix set-overflow">
+            <div class="container-fluid">
+              <!-- <div class="form-row">
+              <div class="col-md-2"></div>
+              <div class="col-md-3">
+                <input class="form-check-input" type="radio" name="method" value="lookup" ngModel>
+                <label class="form-check-label" for="method">Vehicle lookUp</label>
+              </div>
+              <div class="col-md-3">
+                <input class="form-check-input" type="radio" name="method" value="check" ngModel>
+                <label class="form-check-label" for="method">Vehicle Check</label>
+              </div>
+              <div class="col-md-4">
+              </div>
+            </div> -->
+              <br/>
+              <div class="row">
+                <div class="col-md-1">
+
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control form-field-border" for="inputVehicleNumber" name="inputVehicleNumber" id="inputVehicleNumber"
+                    placeholder="Vehicle Number" ngModel>
+                </div>
+                <div class="col-md-2">
+                  <button type="submit" class="btn btn-primary pull-right">Submit</button>
+                </div>
+                <div class="col-md-2">
+                  <button type="button" class="btn btn-primary pull-right" (click)="onClear(submitVehicle)">Clear</button>
+                </div>
+              </div>
+              <br/>
+            </div>
+            <div class="card-footer">
+              <div [hidden]="!enableButton" class="panel panel-default">
+                <div class="card-header p-2">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <b>Vehicle Details</b>
+                    </div>
+                    <div class="col-sm-4">
+
+                    </div>
+                    <div class="col-sm-4">
+                      <button type="button" class="btn btn-primary btn-sm" [disabled]="!enableButton" (click)="allocateVehicle(submitVehicle)">Allocate Parking</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-1">&nbsp;</div>
+                    <div class="col-sm-11">
+                      <form>
+                        <tr>
+                          <td>Person Name:</td>
+                          <td>{{queryPerson.name}}</td>
+                        </tr>
+                        <tr>
+                          <td>Person ID:</td>
+                          <td>{{queryPerson.id}}</td>
+                        </tr>
+                        <tr>
+                          <td>Person type:</td>
+                          <td>{{queryPerson.type}}</td>
+                        </tr>
+                        <tr>
+                          <td>Vehicle Type:</td>
+                          <td>
+                            <span *ngFor="let vehicleInfo of queryPerson.vehicleNumbers;let lastIdx=last">
+                              {{vehicleInfo.type}}
+                              <span *ngIf="!lastIdx">,</span>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Vehicle Number:</td>
+                          <td>
+                            <span *ngFor="let vehicleInfo of queryPerson.vehicleNumbers;let lastIdx=last">{{vehicleInfo.number}}
+                              <span *ngIf="!lastIdx">,</span>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Valid From:</td>
+                          <td>{{queryPerson.validFrom|date:'longDate'}}</td>
+                        </tr>
+                        <tr>
+                          <td>Valid To:</td>
+                          <td>{{queryPerson.validTo|date:'longDate' }}</td>
+                        </tr>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card custom-indicator ml-0 mr-3">
+        <div class="card-header p-2">
+          <h5 class="ml-2">New Registration</h5>
+        </div>
+        <div class="card-body p-2 height-fix set-overflow">
+          <div class="container-fluid">
+            <form #submitForm="ngForm" (ngSubmit)="submitUser(submitForm)">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                <label for="inputPersonId">PersonId</label>
+                <input type="text" class="form-control form-field-border" name="inputPersonId" id="inputPersonId" placeholder="PersonId" [(ngModel)]="person.id"
+                  required>
+              </div>
+                <div class="form-group col-md-6">
+                  <label for="inputPersonName">Person Name</label>
+                  <input type="text" class="form-control form-field-border" name="inputPersonName" id="inputPersonName" placeholder="Person Name"
+                    [(ngModel)]="person.name" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputEmail">Email</label>
+                  <input type="email" class="form-control form-field-border" name="inputEmail" id="inputEmail" placeholder="Email" [(ngModel)]="person.email">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputMobileNo">Mobile</label>
+                  <input type="number" class="form-control form-field-border" name="inputMobileNo" id="inputMobileNo" placeholder="Mobile Number"
+                    [(ngModel)]="person.mobile">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control form-field-border" name="inputAddress" id="inputAddress" placeholder="1234 Main St"
+                  [(ngModel)]="person.address" required>
+              </div>
+              <div class="form-row">
+                <!-- <div class="form-group col-md-6">
+                <label for="inputVehicleType">Vehicle Type</label>
+                <select class="custom-select mr-sm-2" name="inputVehicleType" id="inputVehicleType" ngModel required>
+                  <option value="" selected>Select</option>
+                  <option value="1">Car</option>
+                  <option value="2">Bike</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                  <label for="inputVehicleNumber">Vehicle Number</label>
+                  <input type="text" class="form-control" name="inputVehicleNumber" id="inputVehicleNumber" placeholder="Vehicle Number" ngModel
+                    required>
+                </div> -->
+                <table class="table table-sm table-tabbed">
+                  <tr>
+                    <td>Vehicle Type</td>
+                    <td>Vehicle Number</td>
+                  </tr>
+                  <tr *ngFor="let vehicleDetail of vehicleDetailsFields;let i=index; trackBy: trackByFn">
+                    <td>
+                      <div class="input-group">
+                        <select class="custom-select mr-sm-2 form-field-border" name="inputVehicleType{{i}}" id="inputVehicleType{{i}}" [(ngModel)]="vehicleDetail.type"
+                          required>
+                          <option value="" selected>Select</option>
+                          <option value="CAR">Car</option>
+                          <option value="BIKE">Bike</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>
+                      <input type="text" class="form-control form-field-border" name="inputVehicleNumber{{i}}" id="inputVehicleNumber{{i}}" placeholder="Vehicle Number"
+                        [(ngModel)]="vehicleDetail.number" required>
+                    </td>
+                    <td>
+                      <i class="material-icons md-30" (click)="removeMenu(i)" *ngIf="vehicleDetailsFields.length!=1">remove_circle_outline</i>
+                      <i class="material-icons md-30" (click)="addMenu(vehicleDetail,i)" *ngIf="i==vehicleDetailsFields.length-1">add_circle</i>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputPersonType">Person Type</label>
+                  <select class="custom-select mr-sm-2 form-field-border" name="inputPersonType" id="inputPersonType" [(ngModel)]="person.type"
+                    required>
+                    <option value="" selected>Select</option>
+                    <option value="2">Employee</option>
+                    <option value="3">Visitor</option>
+                    <option value="3">Others</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputReportingPerson">Reporting Person</label>
+                  <input type="text" class="form-control form-field-border" name="inputReportingPerson" id="inputReportingPerson" placeholder="Reporting Person"
+                    [(ngModel)]="person.supervisorName" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-6">
+                  <label for="inputValidFrom">Valid From</label>
+                  <input type="date" class="form-control form-field-border" name="inputValidFrom" id="inputValidFrom" [(ngModel)]="person.validFrom"
+                    required>
+                </div>
+                <div class="col-md-6">
+                  <label for="inputValidTo">Valid To</label>
+                  <input type="date" class="form-control form-field-border" name="inputValidTo" id="inputValidTo" [(ngModel)]="person.validTo"
+                    required>
+                </div>
+              </div>
+              <br/>
+              <div class="form-row">
+                <div class="col-md-8">
+
+                </div>
+                <div class="col-md-2">
+                  <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+                <div class="col-md-2">
+                  <button type="button" class="btn btn-primary" (click)="onClear(submitForm)">Cancel</button>
+                </div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
